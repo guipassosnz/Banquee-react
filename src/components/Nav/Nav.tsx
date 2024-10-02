@@ -1,4 +1,3 @@
-import BaseButton from "../BaseButton/BaseButton";
 import "./Nav.css";
 import bulletArrowDown from "/arrowdown.svg";
 
