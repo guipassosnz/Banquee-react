@@ -1,0 +1,61 @@
+.SectionHero {
+  position: relative;
+}
+
+.SectionHero.hero {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  padding: 128px 0px;
+}
+
+.SectionHero .grid-start {
+  max-width: 600px;
+  justify-content: flex-start;
+}
+
+.SectionHero .grid-start p {
+  font-size: 24px;
+  line-height: 170%;
+  padding-bottom: 32px;
+  padding-top: 16px;
+}
+
+.SectionHero .checklist {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
+  column-gap: 80px;
+  max-width: 489px;
+  padding-left: 0px;
+  margin-bottom: 64px;
+}
+
+.SectionHero .checkmark-list {
+  display: flex;
+  height: 32px;
+  width: 225px;
+  gap: 16px;
+  padding-left: 0px;
+}
+
+.SectionHero .checkmark-list img {
+  height: 24px;
+  width: 24px;
+}
+
+.SectionHero .checkmark-list p {
+  font-size: 18px;
+  padding: 0;
+}
+
+.SectionHero .cards {
+  width: 400px;
+  height: auto;
+  justify-content: flex-end;
+}
+
+.SectionHero .hero-buttons {
+  display: flex;
+  gap: 16px;
+}

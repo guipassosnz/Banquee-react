@@ -1,12 +1,43 @@
 .BaseButton {
-  position: relatve;
+  position: relative;
+  display: flex;
+  gap: 6px;
+  border-radius: 6px;
+  align-content: center;
+  justify-content: center;
+  padding: 16px 24px;
+  border: none;
+  cursor: pointer;
+  font-family: "DM Sans";
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  line-height: 100%;
 }
 
 .BaseButton.flat {
 }
 
 .BaseButton.green {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.BaseButton.green:hover {
+  background-color: #438677;
 }
 
 .BaseButton.white {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.BaseButton.white img {
+  line-height: 100%;
+}
+
+.BaseButton.white:hover {
+  background-color: var(--grey);
+  border-radius: 4px;
+  size: 100%;
 }

@@ -1,3 +1,4 @@
+import BaseButton from "../BaseButton/BaseButton";
 import "./Nav.css";
 import bulletArrowDown from "/arrowdown.svg";
 
@@ -25,7 +26,7 @@ function Nav() {
           <ul className="nav-center">
             {menuItems.map((item) => {
               return (
-                <li className="nav-itens">
+                <li key={item.label} className="nav-itens">
                   <a href={item.url}>
                     {item.label}
 
@@ -42,8 +43,8 @@ function Nav() {
             })}
           </ul>
           <div className="nav-right">
-            <button className="button-login">Login</button>
-            <button className="button-open-account">Open account</button>
+            <BaseButton appearence="white" label="Login" />
+            <BaseButton appearence="green" label="Open Account" />
           </div>
         </div>
       </nav>

@@ -51,30 +51,7 @@
 
 .Nav .nav-right {
   display: flex;
-  gap: 32px;
-}
-
-.Nav .button-login,
-.Nav .button-open-account {
-  font-family: "DM Sans";
-  font-size: 15px;
-}
-
-.Nav .button-login {
-  color: var(--green);
-  background-color: var(--white);
-  border: none;
-}
-
-.Nav .button-open-account {
-  color: var(--white);
-  background-color: var(--green);
-  border: none;
-  border-radius: 6px;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 16px;
-  cursor: pointer;
+  gap: 16px;
 }
 
 .Nav nav .nav-center li a:hover {

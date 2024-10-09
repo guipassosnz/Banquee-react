@@ -12,3 +12,62 @@ body {
   --grey: #f8f8f8;
   --grey-border: #e8e8e8;
 }
+
+.centralize-area {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+h1 {
+  font-family: "DM Sans";
+  font-size: 100px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "DM Sans";
+  font-size: 80px;
+  line-height: 110%;
+  letter-spacing: -2px;
+  font-weight: 450;
+}
+
+h3 {
+  font-family: "DM Sans";
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 180%;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: "DM Sans";
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: "DM Sans";
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 170%;
+}
