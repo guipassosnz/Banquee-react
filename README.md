@@ -22,7 +22,7 @@
 
 ## Receita basica do git
 
-- git add --all (ou git add -- <caminho do arquivo>)
+- git add --all (ou git add -- ./caminho do arquivo)
 - git commit -m "Mensagem do commit"
 - git pull origin main (para atualizar com o servidor)
 - git push origin main (para enviar para o servidor)
