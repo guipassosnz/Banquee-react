@@ -2,12 +2,13 @@
 
 ## Comandos para NodeJS
 
+- Para parar um serviço rodando utilizar "control + c"
 - Todo projeto de node js tem um arquvo package.json
 - A secao scripts tem comands que rodam com "npm run"
   - por exemplo: para subir o site do VITE use "npm run dev"
-- para instalar um projeto node sempre rodar "npm install" na raiz do proejto
+- Para instalar um projeto node sempre rodar "npm install" na raiz do projeto
 
-## conceitos basicos de react js
+## Conceitos basicos de react js
 
 - Todo componente é uma funçao com nome maiusculo
   - function MyComponent
@@ -19,7 +20,7 @@
 - useEffect é executada quando o componente é montado na memoria
 - useState é usado para criar variaveis dentro do componente
 
-## receita basica do git
+## Receita basica do git
 
 - git add --all (ou git add -- <caminho do arquivo>)
 - git commit -m "Mensagem do commit"
