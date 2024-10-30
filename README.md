@@ -8,6 +8,18 @@
   - por exemplo: para subir o site do VITE use "npm run dev"
 - Para instalar um projeto node sempre rodar "npm install" na raiz do projeto
 
+## Comandos de UNIX
+
+- "cd" para navegar entre pastas
+  - cd frontends (entra na pasta fronteds)
+  - cd .. (volta uma pasta)
+  - cd ../.. (volta duas pastas)
+  - cd / (vai para raiz do sistema operacional)
+- ls -la para verificar o que tem numa pasta em forma de lista
+  - ls -la (lista o diretorio atual)
+  - ls -la frontends (lista o diretorio frontends)
+- pwd para mostrar o caminh completo de qual diretorio voce esta no momento
+
 ## Conceitos basicos de react js
 
 - Todo componente é uma funçao com nome maiusculo
