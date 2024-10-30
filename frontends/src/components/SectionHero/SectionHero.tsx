@@ -30,14 +30,20 @@ function CheclistItem({ label = "" }: CheclistItemType) {
 }
 
 function SectionHero() {
+  //Sessao de variaveis
   const [checklistItems, setChecklistItems] = useState<string[]>([]);
 
+  //Sessao de funcoes
+
+  //Sessao de React Hooks
   useEffect(() => {
+    // react hook onMount (quando o componente e montado a primeira vez)
     const serverResponse = simulateServer();
 
     setChecklistItems(serverResponse.data);
   }, []);
 
+  //Sessao de template
   return (
     <section className="SectionHero hero">
       <div className="grid-start">
