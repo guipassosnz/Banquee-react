@@ -18,31 +18,15 @@ type SectionHeroDataType = {
 };
 
 //async / await
-async function simulateServer(): Promise<SectionHeroDataType> {
-  const mockData = {
-    mainTitle: "Banking starts here.",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    checklistItems: [
-      "Instant transfers",
-      "Saving accounts",
-      "Payment wordlwide",
-      "100% mobile banking",
-    ],
-    openAccountButtonLabel: "Open Account",
-    compareCardsButtonLabel: "Compare cards",
-    bannerImage: "cards.svg",
-  };
-
-  const seconds = 1;
-
-  const myPromise = new Promise<SectionHeroDataType>((resolve) => {
-    window.setTimeout(() => {
-      resolve(mockData);
-    }, seconds * 1000);
+// https://kentcdodds.com/blog/using-fetch-with-type-script
+async function requestServerData(): Promise<SectionHeroDataType> {
+  const serverData = await fetch("http://localhost:5800/get-user-name", {
+    method: "POST",
   });
 
-  return myPromise; //retonar direto o mockData return mockData
+  const jsonResponse: SectionHeroDataType = await serverData.json();
+
+  return jsonResponse;
 }
 
 function CheclistItem({ label = "" }: CheclistItemType) {
@@ -70,7 +54,7 @@ function SectionHero() {
   //Sessao de funcoes
   async function loadTemplateData() {
     setLoading(true);
-    const temp = await simulateServer();
+    const temp = await requestServerData();
     setLoading(false);
 
     setTemplateData(temp);
