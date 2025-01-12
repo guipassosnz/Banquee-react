@@ -1,0 +1,49 @@
+.SectionFeatures {
+  position: relative;
+}
+
+.SectionFeatures .features {
+  display: flex;
+  padding: 160px 0px;
+  justify-content: center;
+  gap: 220px;
+}
+
+.SectionFeatures .features-left h2 {
+  margin-bottom: 64px;
+}
+
+.SectionFeatures .info-cards-grid {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.SectionFeatures .info-card {
+  width: 284px;
+  height: 264px;
+  background-color: var(--white);
+  border: 2px solid;
+  border-color: var(--grey-border);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.SectionFeatures .info-card h5 {
+  margin-bottom: 8px;
+}
+
+.SectionFeatures .inter-16px {
+  font-size: 16px;
+}
+
+.SectionFeatures .info-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+.SectionFeatures .features-right {
+  width: 380px;
+  height: 800px;
+}

@@ -20,7 +20,7 @@ type SectionHeroDataType = {
 //async / await
 // https://kentcdodds.com/blog/using-fetch-with-type-script
 async function requestServerData(): Promise<SectionHeroDataType> {
-  const serverData = await fetch("http://localhost:5800/get-user-name", {
+  const serverData = await fetch("http://localhost:5800/hero-banner", {
     method: "POST",
   });
 

@@ -9,7 +9,6 @@ function App() {
 
       <SectionHero />
 
-      {/* TODO: Features */}
       {/* TODO: Transactions */}
       {/* TODO: Savings */}
       {/* TODO: Notifications */}

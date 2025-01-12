@@ -17,7 +17,7 @@ server.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-server.post("/get-user-name", (req, res) => {
+server.post("/hero-banner", (req, res) => {
   res.status(200).json({
     mainTitle: "Banking starts here.",
     description:
@@ -31,6 +31,25 @@ server.post("/get-user-name", (req, res) => {
     openAccountButtonLabel: "Open Account",
     compareCardsButtonLabel: "Compare cards",
     bannerImage: "cards.svg",
+  });
+});
+server.post("/section-features", (req, res) => {
+  res.status(200).json({
+    mainTitle: "One app. One Banking.",
+    featureItens: [
+      {
+        icon: "img/instant-transactions.svg",
+        title: "Instant transactions",
+        description:
+          "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
+      },
+      {
+        icon: "img/instant-transactions.svg",
+        title: "Instant transactions",
+        description:
+          "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
+      },
+    ],
   });
 });
 
