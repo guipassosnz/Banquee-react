@@ -35,7 +35,7 @@ server.post("/hero-banner", (req, res) => {
 });
 server.post("/section-features", (req, res) => {
   res.status(200).json({
-    mainTitle: "One app. One Banking.",
+    mainTitle: "One app. <br/> One Banking.",
     featureItens: [
       {
         icon: "img/instant-transactions.svg",
@@ -44,12 +44,37 @@ server.post("/section-features", (req, res) => {
           "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
       },
       {
-        icon: "img/instant-transactions.svg",
-        title: "Instant transactions",
+        icon: "img/saving-accounts.png",
+        title: "Saving accounts",
+        description:
+          "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
+      },
+      {
+        icon: "img/mobile-banking.svg",
+        title: "Mobile banking",
+        description:
+          "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
+      },
+      {
+        icon: "img/badgeadv-stats.svg",
+        title: "Advanced statistics",
+        description:
+          "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
+      },
+      {
+        icon: "img/badgev-cards.svg",
+        title: "Virtual Cards",
+        description:
+          "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
+      },
+      {
+        icon: "img/badgev-cards.svg",
+        title: "Virtual Cards",
         description:
           "Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.",
       },
     ],
+    bannerImage: "img/Phone.svg",
   });
 });
 

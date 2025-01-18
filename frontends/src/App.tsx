@@ -1,5 +1,6 @@
 import "./App.css";
 import Nav from "./components/Nav/Nav";
+import SectionFeatures from "./components/SectionFeatures/SectionFeatures";
 import SectionHero from "./components/SectionHero/SectionHero";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Nav />
 
       <SectionHero />
+      <SectionFeatures />
 
       {/* TODO: Transactions */}
       {/* TODO: Savings */}

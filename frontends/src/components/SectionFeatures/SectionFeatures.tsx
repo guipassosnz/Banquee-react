@@ -1,3 +1,4 @@
+import "./SectionFeatures.css";
 import { useEffect, useState } from "react";
 
 type FeatureItensType = {
